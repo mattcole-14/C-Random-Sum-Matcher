@@ -53,27 +53,27 @@ int main(void)
         {
             desiredSum = generateNumbers();
 
-            printf("Processing . . . . . . .\n");
+            printf("\nProcessing . . . . . . .\n\n");
 
             attempts = reproduceSum(desiredSum);
 
             printf("Number of Times the Numbers were Generated\n");
-            printf("Before the Desired sum was reached = %d\n", attempts);
+            printf("Before the Desired sum was reached = %d\n\n", attempts);
 
             printf("Run The App. Again Yes ? No ----- > ");
             scanf("%9s", again);
 
             while (strcmp(again, "Yes") != 0 && strcmp(again, "No") != 0)
             {
-                printf("Invalid Choice - Enter Yes / No ----- > ");
+                printf("\nInvalid Choice - Enter Yes / No ----- > ");
                 scanf("%9s", again);
             }
 
         } while (strcmp(again, "Yes") == 0);
     }
 
-    printf("Implemented By Matthew Braziel\n");
-    printf("October 5th - 2026\n");
+    printf("\nImplemented By Matthew Braziel\n");
+    printf("\nOctober 5th - 2026\n");   
     return 0;
 }
 /*
@@ -97,7 +97,7 @@ int reproduceSum(int desiredSum)
 
         printf("Generating First Number = %d\n", firstNumber);
         printf("Generating Second Number = %d\n", secondNumber);
-        printf("The sum of the generated numbers is : %d\n", sum);
+        printf("The sum of the generated numbers is : %d\n\n", sum);
 
     } while (sum != desiredSum);
 
@@ -117,9 +117,10 @@ int generateNumbers(void)
 
     sum = firstNumber + secondNumber;
 
-    printf("First Generated Number : %d\n", firstNumber);
+    printf("\nFirst Generated Number : %d\n", firstNumber);
     printf("Second Generated Number : %d\n", secondNumber);
-    printf("First Number + Second Number = %d\n", sum);
+
+    printf("\nFirst Number + Second Number = %d\n", sum);
 
     return sum;
 }
