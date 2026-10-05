@@ -3,8 +3,7 @@ Name: Matthew Braziel
 CS 4350 - Unix Systems Programming
 Section Number: 001
 Assignment Number: 4
-Due Date: 10/05/2026
-*/
+Due Date: 10/05/2026 */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -77,6 +76,9 @@ int main(void)
     printf("October 5th - 2026\n");
     return 0;
 }
+/*
+reproduceSum: Generates two random numbers until their sum matches
+desired sum and returns the # of attempts. */
 
 int reproduceSum(int desiredSum)
 {
@@ -101,7 +103,9 @@ int reproduceSum(int desiredSum)
 
     return count;
 }
-
+/*
+generateNumbers: Generates two random numbers between 2 and 20,
+displays them, and returns their sum. */
 int generateNumbers(void)
 {
     int firstNumber;
@@ -120,3 +124,4 @@ int generateNumbers(void)
     return sum;
 }
 
+/* End of Program */
